@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5DFCE19D53A66C6FB1F206BB /* Pods_countryflags.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF2EC6B56E88F01CF424E4A /* Pods_countryflags.framework */; };
 		889EFD521E641C7BDC5F32CC /* Pods_countryflagsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23AEE01D499FA5FFEA07FDF2 /* Pods_countryflagsTests.framework */; };
+		A09606201DE041A600744E0E /* FlagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A096061F1DE041A600744E0E /* FlagViewController.swift */; };
 		BC0B5EA51DDF9B030037B473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0B5EA41DDF9B030037B473 /* AppDelegate.swift */; };
 		BC0B5EA71DDF9B030037B473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0B5EA61DDF9B030037B473 /* ViewController.swift */; };
 		BC0B5EAA1DDF9B030037B473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC0B5EA81DDF9B030037B473 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 		81F5BCB5E44FD31F1B605F75 /* Pods-countryflags.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-countryflags.release.xcconfig"; path = "Pods/Target Support Files/Pods-countryflags/Pods-countryflags.release.xcconfig"; sourceTree = "<group>"; };
 		8AF2EC6B56E88F01CF424E4A /* Pods_countryflags.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_countryflags.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		914412718400D4B16E63B808 /* Pods-countryflags.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-countryflags.debug.xcconfig"; path = "Pods/Target Support Files/Pods-countryflags/Pods-countryflags.debug.xcconfig"; sourceTree = "<group>"; };
+		A096061F1DE041A600744E0E /* FlagViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlagViewController.swift; sourceTree = "<group>"; };
 		BC0B5EA11DDF9B030037B473 /* countryflags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = countryflags.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC0B5EA41DDF9B030037B473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC0B5EA61DDF9B030037B473 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				BC0B5EAB1DDF9B030037B473 /* Assets.xcassets */,
 				BC0B5EAD1DDF9B030037B473 /* LaunchScreen.storyboard */,
 				BC0B5EB01DDF9B030037B473 /* Info.plist */,
+				A096061F1DE041A600744E0E /* FlagViewController.swift */,
 			);
 			path = countryflags;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC0B5EA71DDF9B030037B473 /* ViewController.swift in Sources */,
+				A09606201DE041A600744E0E /* FlagViewController.swift in Sources */,
 				BC0B5EA51DDF9B030037B473 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -470,7 +474,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 914412718400D4B16E63B808 /* Pods-countryflags.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = countryflags/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flags.countryflags;
@@ -483,7 +487,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 81F5BCB5E44FD31F1B605F75 /* Pods-countryflags.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = countryflags/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flags.countryflags;
@@ -541,6 +545,7 @@
 				BC0B5EC01DDF9B030037B473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC0B5EC11DDF9B030037B473 /* Build configuration list for PBXNativeTarget "countryflagsTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +554,7 @@
 				BC0B5EC31DDF9B030037B473 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
