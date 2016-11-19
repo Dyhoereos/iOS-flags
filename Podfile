@@ -7,6 +7,7 @@ target 'countryflags' do
 
   # Pods for countryflags
 	pod 'Alamofire', '~> 4.0'
+	pod 'AlamofireImage', '~> 3.1'
 
   target 'countryflagsTests' do
     inherit! :search_paths

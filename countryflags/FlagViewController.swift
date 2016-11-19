@@ -7,16 +7,25 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class FlagViewController: UIViewController {
+    @IBOutlet weak var imageView: UIImageView!
 
-    @IBOutlet var imageView: UIView!
     var country = ""
+    let urlStart = "https://raw.githubusercontent.com/hjnilsson/country-flags/master/png250px/"
+    let ext = ".png"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(country)
-        // Do any additional setup after loading the view.
+        let url = urlStart+country+ext
+        
+        Alamofire.request(url).responseImage { response in
+            if let image = response.result.value{
+                self.imageView.image = image
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {

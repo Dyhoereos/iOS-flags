@@ -64,7 +64,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.deselectRow(at: indexPath, animated: true)
 
         // pass country code to FlagViewController
-        let flagVC = FlagViewController()
+        let flagVC = storyboard?.instantiateViewController(withIdentifier: "flagVC") as! FlagViewController
         flagVC.country = countries[indexPath.row].code
         navigationController?.pushViewController(flagVC, animated: true)    }
 }
